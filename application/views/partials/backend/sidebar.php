@@ -217,7 +217,7 @@
 				<!--						<p>About Us</p>-->
 				<!--					</a>-->
 				<!--				</li>-->
-				<li class="nav-header text-xs">Rahmat islamiyah MEDAN &copy;2019</li>
+
 			</ul>
 		</nav>
 		<!-- /.sidebar-menu -->

@@ -9,7 +9,20 @@
 				Tanggal Akhir : <input class="form-control " type="date" name="tanggal_akhir" id="filter_akhir">
 
 				<br>
-				<input class="btn btn-primary" type="button" value="Filter" onclick="filter()">
+
+				<div class="row">
+					<div class="col-sm-2">
+						<input class="btn btn-primary" type="button" value="Filter" onclick="filter()">
+					</div>
+					<div class="col-sm-2">
+						<?php
+						$filter_awal = $this->input->get("filter_awal");
+						$filter_akhir = $this->input->get("filter_akhir");
+						?>
+						<a href="<?= base_url('admin/absen_guru/cetak_rekap?filter_awal=' . $filter_awal . '&filter_akhir=' . $filter_akhir . '') ?>" class="btn btn-info" type="button">Cetak</a>
+					</div>
+				</div>
+
 
 				<!-- <select name="hari" id="filter" class="form-control select2 w-25 float-right" onchange="filter()" required>
 					<option value="">Filter Hari</option>
