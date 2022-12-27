@@ -8,7 +8,7 @@ class Pdf extends CI_Controller
     protected $table_guru = "guru";
     protected $table_absensi = "absensi";
     protected $table_siswa = "siswa";
-
+    
     public function __construct()
     {
         parent::__construct();
@@ -25,6 +25,9 @@ class Pdf extends CI_Controller
 
     public function index()
     {
+
+
+
         $pdf = new FPDF('P', 'mm', 'Letter');
         $pdf->AddPage();
         $pdf->SetFont('Arial', 'B', 16);
